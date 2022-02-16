@@ -42,6 +42,7 @@ TARGET_SCREEN_DENSITY := 480
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/messi_manifest.xml
 
 # Kernel
+BOARD_KERNEL_CMDLINE += androidboot.boot_devices=soc/1da4000.ufshc
 TARGET_KERNEL_CONFIG := lineageos_messi_defconfig
 
 # Partitions

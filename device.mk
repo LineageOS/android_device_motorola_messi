@@ -78,6 +78,11 @@ $(call add-product-dex-preopt-module-config,MotoSignatureApp,disable)
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/idc/uinput-fpc.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/uinput-fpc.idc
 
+# GMS
+ifeq ($(WITH_GMS),true)
+GMS_MAKEFILE=gms_minimal.mk
+endif
+
 # PocketMode
 PRODUCT_PACKAGES += \
     MotoPocketMode

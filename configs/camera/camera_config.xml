@@ -112,25 +112,24 @@ LensInfo : Information of the lens present in the module.
   </CameraModuleConfig>
   <CameraModuleConfig>
     <CameraId>1</CameraId>
-    <SensorName>mot_ov5695</SensorName>
-    <ChromatixName>mot_ov5695_chromatix</ChromatixName>
-    <EepromName>mot_ov5695</EepromName>
-    <FlashName>aw3643_front</FlashName>
+    <SensorName>mot_s5k4h7</SensorName>
+    <EepromName>s5k4h7a8s</EepromName>
+    <ChromatixName>mot_s5k4h7_chromatix</ChromatixName>
     <ModesSupported>1</ModesSupported>
     <Position>FRONT</Position>
     <MountAngle>270</MountAngle>
     <CSIInfo>
       <CSIDCore>1</CSIDCore>
-      <LaneMask>0x7</LaneMask>
+      <LaneMask>0x1F</LaneMask>
       <LaneAssign>0x4320</LaneAssign>
       <ComboMode>0</ComboMode>
     </CSIInfo>
     <LensInfo>
-      <FocalLength>2.448</FocalLength>
-      <FNumber>2.2</FNumber>
+      <FocalLength>2.48</FocalLength>
+      <FNumber>2.0</FNumber>
       <TotalFocusDistance>1.2</TotalFocusDistance>
-      <HorizontalViewAngle>73.1</HorizontalViewAngle>
-      <VerticalViewAngle>58.1</VerticalViewAngle>
+      <HorizontalViewAngle>71.3</HorizontalViewAngle>
+      <VerticalViewAngle>56.5</VerticalViewAngle>
       <MinFocusDistance>0.1</MinFocusDistance>
     </LensInfo>
   </CameraModuleConfig>

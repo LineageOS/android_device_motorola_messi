@@ -12,13 +12,14 @@ persist.vendor.audio.fluence.speaker=true
 persist.vendor.audio.fluence.voicecall=true
 persist.vendor.audio.fluence.voicecomm=true
 persist.vendor.audio.fluence.voicerec=false
+ro.vendor.audio.sdk.fluencetype=none
 vendor.audio.feature.fm.enable=false
 vendor.audio.feature.incall_music.enable=true
 vendor.audio.offload.gapless.enabled=true
 vendor.voice.path.for.pcm.voip=true
 
 # Bluetooth
-bluetooth.device.default_name=Motorola Z2 Force
+bluetooth.device.default_name=moto z3
 
 # Display
 ro.hardware.vulkan=msm8998
@@ -27,18 +28,13 @@ ro.hardware.vulkan=msm8998
 ro.vendor.display.hdr.config=/vendor/etc/hdr_tm_config.xml
 
 # Mods
-sys.mod.platformsdkversion=205
+sys.mod.platformsdkversion=281
 
 # Sensors
-ro.qti.sensors.dev_ori=false
-ro.qti.sensors.dpc=true
-ro.qti.sensors.iod=true
-ro.qti.sensors.pmd=true
-ro.qti.sensors.mot_detect=true
-ro.qti.sensors.multishake=true
-ro.qti.sensors.sta_detect=true
-ro.hardware.sensors=nash
+persist.vendor.sensors.direct_channel=true
+ro.hardware.sensors=messi
 ro.vendor.sensors.maghalcal=true
+ro.vendor.sensors.acc_uncalibrated=true
 ro.vendor.sensors.amd=false
 ro.vendor.sensors.pmd=false
 ro.vendor.sensors.rmd=false
@@ -51,6 +47,7 @@ ro.sensors.tof.interval_ms=5000
 ro.vendor.sensors.dev_ori=true
 ro.vendor.sensors.sta_detect=true
 ro.vendor.sensors.mot_detect=true
+ro.vendor.sensors.mot_ltv=true
 
 # SKU
 ro.boot.product.hardware.sku=qcril

@@ -18,5 +18,5 @@
 -->
 <resources>
     <!-- Default for Settings.Global.DEVICE_NAME $1=MODEL-->
-    <string name="def_device_name_simple">Moto Z2 Force</string>
+    <string name="def_device_name_simple">moto z3</string>
 </resources>

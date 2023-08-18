@@ -16,13 +16,13 @@
 
 # Must set these before including common config
 TARGET_BOARD_PLATFORM := msm8998
-TARGET_BOOTLOADER_BOARD_NAME := Nash
+TARGET_BOOTLOADER_BOARD_NAME := messi
 TARGET_SUPPORTS_MOTO_MODS := true
 
 # Inherit from motorola msm8998-common
 include device/motorola/msm8998-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/motorola/nash
+DEVICE_PATH := device/motorola/messi
 
 # A/B updater
 AB_OTA_PARTITIONS += \
@@ -39,18 +39,18 @@ TARGET_EXCLUDES_AUDIOFX := true
 MALLOC_SVELTE_FOR_LIBC32 := true
 
 # Display
-TARGET_SCREEN_DENSITY := 560
+TARGET_SCREEN_DENSITY := 480
 
 # HIDL
-DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/nash_manifest.xml
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/messi_manifest.xml
 
 # Kernel
-TARGET_KERNEL_CONFIG := lineageos_nash_defconfig
+TARGET_KERNEL_CONFIG := lineageos_messi_defconfig
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864
-BOARD_SYSTEMIMAGE_PARTITION_SIZE := 4378853376
-BOARD_VENDORIMAGE_PARTITION_SIZE := 1409286144
+BOARD_SYSTEMIMAGE_PARTITION_SIZE := 3338665984
+BOARD_VENDORIMAGE_PARTITION_SIZE := 973078528
 
 # Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
@@ -62,4 +62,4 @@ ENABLE_VENDOR_RIL_SERVICE := true
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
 # inherit from the proprietary version
-include vendor/motorola/nash/BoardConfigVendor.mk
+include vendor/motorola/messi/BoardConfigVendor.mk

@@ -8,21 +8,13 @@
 
 function blob_fixup() {
     case "${1}" in
-        # Load libSonyDefocus from vendor
-        vendor/lib/libmmcamera_imx386.so)
-            sed -i "s|/system/lib/hw/|/vendor/lib/hw/|g" "${2}"
-            ;;
         # Load ZAF configs from vendor
         vendor/lib/libzaf_core.so)
             sed -i "s|/system/etc/zaf|/vendor/etc/zaf|g" "${2}"
             ;;
-        # Load camera configs from vendor
-        vendor/lib/libmmcamera2_sensor_modules.so)
-            sed -i "s|/system/etc/camera/|/vendor/etc/camera/|g" "${2}"
-            ;;
-        # Drop unused dependency
-        vendor/lib/libmmcamera_vstab_module.so)
-            "${PATCHELF}" --remove-needed libandroid.so "${2}"
+        # Fix camera recording
+        vendor/lib/libmmcamera2_pproc_modules.so)
+            sed -i "s/ro.product.manufacturer/ro.product.nopefacturer/" "${2}"
             ;;
         # Load camera metadata shim
         vendor/lib/hw/camera.msm8998.so)
@@ -51,7 +43,7 @@ fi
 
 set -e
 
-export DEVICE=nash
+export DEVICE=messi
 export DEVICE_COMMON=msm8998-common
 export VENDOR=motorola
 

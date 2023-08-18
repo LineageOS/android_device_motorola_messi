@@ -8,7 +8,7 @@
 
 set -e
 
-export DEVICE=nash
+export DEVICE=messi
 export DEVICE_COMMON=msm8998-common
 export VENDOR=motorola
 

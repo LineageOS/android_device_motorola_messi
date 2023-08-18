@@ -22,6 +22,12 @@
          2 = left side
          3 = right side
     -->
-    <integer name="config_fingerprintSensorLocation">1</integer>
+    <integer name="config_fingerprintSensorLocation">3</integer>
+
+     <!-- Fingerprint sensor location -->
+     <dimen name="fingerprint_dot_radius">8.0dip</dimen>
+     <dimen name="fingerprint_pulse_radius">50.0dip</dimen>
+     <item name="fingerprint_sensor_location_fraction_x" type="fraction">50.0%</item>
+     <item name="fingerprint_sensor_location_fraction_y" type="fraction">29.999996%</item>
 
 </resources>

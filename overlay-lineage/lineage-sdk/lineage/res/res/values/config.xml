@@ -47,7 +47,7 @@
             64 - Volume rocker
          For example, a device with Home, Back and Menu keys would set this
          config to 7. -->
-    <integer name="config_deviceHardwareKeys">65</integer>
+    <integer name="config_deviceHardwareKeys">64</integer>
 
     <!-- Display mode remapping table.
          If the mode names returned by the backend do not match

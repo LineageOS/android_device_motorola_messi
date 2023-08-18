@@ -1,8 +1,8 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
-## are from nash_retail (PPX29.159-24).
+## are from messi-user 9 PDXS29.84-51-11-5 c69ad release-keys.
 
 # Audio (Prebuilt Audio HAL)
-vendor/lib/hw/audio.primary.msm8998.so|1007e06b43156783d796457b3b46be5a09b6ae9e|c1d66f4f89ec1d0e6744eff1e5336a8ec705b379
+vendor/lib/hw/audio.primary.msm8998.so
 vendor/lib/libmotaudioutils.so
 vendor/lib/libtinyalsa.so
 vendor/lib/libtinycompress.so
@@ -34,12 +34,11 @@ framework/com.motorola.motosignature.jar
 lib/lib_mot_app6_metadata.so:vendor/lib/lib_mot_app6_metadata.so
 lib/libmot_lux_standardization.so:vendor/lib/libmot_lux_standardization.so
 vendor/bin/vl53l1_daemon
-vendor/lib/hw/camera.msm8998.so|ad3df43cd644e97fb373ce27dd05d07544d7b6c4|af37a533ba1f4203b7e1b4db1ec9cc3ad47dea75
+vendor/lib/hw/camera.msm8998.so
 vendor/lib/hw/libSonyDefocus.so
 vendor/lib/lib_mot_led_calibration.so
 vendor/lib/lib_motsensorlistener.so
 vendor/lib/libactuator_mot_ak7371.so
-vendor/lib/libcdsprpc.so
 vendor/lib/libflash_aw3643_front.so
 vendor/lib/libflash_aw3643_rear.so
 vendor/lib/libflash_pmic.so
@@ -60,7 +59,7 @@ vendor/lib/libqomx_jpegenc_pipe.so
 vendor/lib/libremosaic_daemon.so
 vendor/lib/libvideobokeh.so
 vendor/lib/libzaf_algs.so
-vendor/lib/libzaf_core.so|c11fc474d8dd9cd8c1ac807996a97716edee3928|ad0a86dca245fd4b5caa634a758b5930f2ebdedf
+vendor/lib/libzaf_core.so
 vendor/lib64/libvideobokeh.so
 vendor/lib64/libvl53l1_daemon.so
 
@@ -205,14 +204,13 @@ vendor/lib/libmmcamera2_isp_modules.so
 vendor/lib/libmmcamera2_mct.so
 vendor/lib/libmmcamera2_mct_shimlayer.so
 vendor/lib/libmmcamera2_pp_buf_mgr.so
-vendor/lib/libmmcamera2_pproc_modules.so|58c3f33190f3d2ab32a867a24b1d87bc9b061457
+vendor/lib/libmmcamera2_pproc_modules.so
 vendor/lib/libmmcamera2_q3a_core.so
-vendor/lib/libmmcamera2_sensor_modules.so|42dfd372f80fb6caa4ca45537d4915bb590f94f6|15813cc7baec1303e5014f6c8df5244ada2c5897
+vendor/lib/libmmcamera2_sensor_modules.so
 vendor/lib/libmmcamera2_stats_algorithm.so
 vendor/lib/libmmcamera2_stats_lib.so
 vendor/lib/libmmcamera2_stats_modules.so
 vendor/lib/libmmcamera_dbg.so
-vendor/lib/libmmcamera_edgesmooth_lib.so
 vendor/lib/libmmcamera_eebinparse.so
 vendor/lib/libmmcamera_eeprom_util.so
 vendor/lib/libmmcamera_eztune_module.so
@@ -226,7 +224,7 @@ vendor/lib/libmmcamera_hvx_add_constant.so
 vendor/lib/libmmcamera_hvx_grid_sum.so
 vendor/lib/libmmcamera_imglib.so
 vendor/lib/libmmcamera_imglib_faceproc_adspstub.so
-vendor/lib/libmmcamera_imx386.so|17869c4b4583a830cde4acf19d3fb7fbd599f2fa|7e20ad146d925263db21d9fc6619ea81e2451d9f
+vendor/lib/libmmcamera_imx386.so
 vendor/lib/libmmcamera_imx386_mono.so
 vendor/lib/libmmcamera_interface.so
 vendor/lib/libmmcamera_isp_abf48.so
@@ -297,8 +295,7 @@ vendor/lib/libmmcamera_tintless_algo.so
 vendor/lib/libmmcamera_tintless_bg_pca_algo.so
 vendor/lib/libmmcamera_tuning.so
 vendor/lib/libmmcamera_tuning_lookup.so
-vendor/lib/libmmcamera_ubifocus_lib.so
-vendor/lib/libmmcamera_vstab_module.so|6c20d8910a0fc4be36ef80d8e7c78a016213d86e|9494f35f05620f4f27449c7dd45277bbba37dcda
+vendor/lib/libmmcamera_vstab_module.so
 vendor/lib64/libmmcamera2_frame_algorithm.so
 vendor/lib64/libmmcamera2_is.so
 vendor/lib64/libmmcamera2_stats_algorithm.so
@@ -404,8 +401,8 @@ etc/permissions/com.motorola.motodisplay.xml:vendor/etc/permissions/com.motorola
 vendor/lib64/libpn553_fw.so:vendor/lib/libpn553_fw.so
 
 # Postprocessing
-vendor/etc/qdcm_calib_data_mipi_mot_cmd_smd_QHD_546_g.xml|f7f8f483359bbc8bdde0ae326b7ec86317e9a9bc
-vendor/etc/qdcm_calib_data_mipi_mot_cmd_smd_QHD_546_p.xml|f7f8f483359bbc8bdde0ae326b7ec86317e9a9bc
+vendor/etc/qdcm_calib_data_mipi_mot_cmd_smd_1080p_601.xml|7159f84fddda4710996a1f0cf5a9bfd9eed24822
+vendor/etc/qdcm_calib_data_mipi_mot_cmd_tianma_1080p_601.xml|2467ff7e358cd6ec099eaa52d673476fb665367a
 
 # Sensors
 vendor/bin/sensors.qti
@@ -417,6 +414,7 @@ vendor/lib/sensor_calibrate.so
 vendor/lib/sensors.iio.so
 vendor/lib/sensors.ssc.so
 vendor/lib/sensors.tof.so
+vendor/lib/sensors.rp.so
 vendor/lib64/libiio.so
 vendor/lib64/libsensor1.so
 vendor/lib64/libsensor_reg.so
@@ -425,6 +423,7 @@ vendor/lib64/sensor_calibrate.so
 vendor/lib64/sensors.iio.so
 vendor/lib64/sensors.ssc.so
 vendor/lib64/sensors.tof.so
+vendor/lib64/sensors.rp.so
 
 # Thermal
-etc/thermal-engine-nash.conf:vendor/etc/thermal-engine.conf
+etc/thermal-engine-messi.conf:vendor/etc/thermal-engine.conf

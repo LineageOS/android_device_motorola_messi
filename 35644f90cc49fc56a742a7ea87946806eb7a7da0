@@ -24,6 +24,30 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "b6f437e2_cda581fd",
+        "filename": "board-info.txt",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2023-08-23T15:34:23Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "59cca497_f60c1168",
+      "range": {
+        "startLine": 1,
+        "startChar": 28,
+        "endLine": 1,
+        "endChar": 40
+      },
+      "revId": "35644f90cc49fc56a742a7ea87946806eb7a7da0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "18a81bc9_8964634e",

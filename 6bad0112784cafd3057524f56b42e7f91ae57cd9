@@ -47,6 +47,30 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "dc6395a1_dd9f0497",
+        "filename": "nash_manifest.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 43,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2023-08-23T15:34:23Z",
+      "side": 0,
+      "message": "Done",
+      "parentUuid": "a616885f_853b03a0",
+      "range": {
+        "startLine": 11,
+        "startChar": 1,
+        "endLine": 43,
+        "endChar": 10
+      },
+      "revId": "6bad0112784cafd3057524f56b42e7f91ae57cd9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "47b0b592_c9f9a790",

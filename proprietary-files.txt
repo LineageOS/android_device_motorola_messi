@@ -421,8 +421,8 @@ etc/permissions/com.motorola.motodisplay.xml:vendor/etc/permissions/com.motorola
 vendor/lib64/libpn553_fw.so:vendor/lib/libpn553_fw.so
 
 # Postprocessing
-vendor/etc/qdcm_calib_data_mipi_mot_cmd_smd_1080p_601.xml
-vendor/etc/qdcm_calib_data_mipi_mot_cmd_tianma_1080p_601.xml
+vendor/etc/qdcm_calib_data_mipi_mot_cmd_smd_1080p_601.xml|7159f84fddda4710996a1f0cf5a9bfd9eed24822
+vendor/etc/qdcm_calib_data_mipi_mot_cmd_tianma_1080p_601.xml|2467ff7e358cd6ec099eaa52d673476fb665367a
 
 # Sensors
 vendor/bin/sensors.qti

@@ -94,6 +94,30 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "5a2128d0_3fc8c9bf",
+        "filename": "gpt-utils/gpt-utils.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 83,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2023-08-23T15:35:02Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "feeb9120_613fbcff",
+      "range": {
+        "startLine": 83,
+        "startChar": 0,
+        "endLine": 83,
+        "endChar": 113
+      },
+      "revId": "35644f90cc49fc56a742a7ea87946806eb7a7da0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "529b64fc_8f0421b0",

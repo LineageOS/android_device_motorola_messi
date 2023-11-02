@@ -127,6 +127,7 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 
 # Ramdisk
 PRODUCT_PACKAGES += \
+    fstab.qcom \
     init.mmi.laser.sh \
     init.gbmods.sh \
     init.messi.rc

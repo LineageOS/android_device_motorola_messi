@@ -83,10 +83,6 @@ ifeq ($(WITH_GMS),true)
 GMS_MAKEFILE=gms_minimal.mk
 endif
 
-# PocketMode
-PRODUCT_PACKAGES += \
-    MotoPocketMode
-
 # HDR
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/hdr_tm_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/hdr_tm_config.xml

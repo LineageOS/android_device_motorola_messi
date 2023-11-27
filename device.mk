@@ -87,6 +87,12 @@ endif
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/hdr_tm_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/hdr_tm_config.xml
 
+# Init
+PRODUCT_PACKAGES += \
+    init.mmi.laser.sh \
+    init.gbmods.sh \
+    init.messi.rc
+
 # Keylayouts
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/uinput-fpc.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/uinput-fpc.kl \
@@ -107,8 +113,8 @@ PRODUCT_PACKAGES += \
     Tag
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
-    $(LOCAL_PATH)/configs/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf
+    $(LOCAL_PATH)/configs/nfc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
+    $(LOCAL_PATH)/configs/nfc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -117,16 +123,13 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.vr.high_performance.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vr.high_performance.xml \
     frameworks/native/data/etc/com.android.nfc_extras.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.android.nfc_extras.xml
 
-# Ramdisk
-PRODUCT_PACKAGES += \
-    init.mmi.laser.sh \
-    init.gbmods.sh \
-    init.messi.rc
-
 # Sensors
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/sensor_def_qcomdev.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sensor_def_qcomdev.conf \
     $(LOCAL_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
+
+# Shipping API
+PRODUCT_SHIPPING_API_LEVEL := 27
 
 # Soong
 PRODUCT_SOONG_NAMESPACES += \
@@ -141,9 +144,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES_DEBUG += \
     update_engine_client
-
-# VNDK
-PRODUCT_SHIPPING_API_LEVEL := 27
 
 # VNDK
 PRODUCT_COPY_FILES += \

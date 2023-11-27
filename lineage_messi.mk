@@ -15,5 +15,5 @@ PRODUCT_MODEL := moto z3
 PRODUCT_NAME := lineage_messi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-        PRODUCT_NAME=messi \
-        PRIVATE_BUILD_DESC="messi-user 9 PDXS29.84-51-11-5 c69ad release-keys"
+    PRODUCT_NAME=messi \
+    PRIVATE_BUILD_DESC="messi-user 9 PDXS29.84-51-11-5 c69ad release-keys"

@@ -449,18 +449,18 @@ vendor/lib/libsensor_reg.so
 vendor/lib/libsns_low_lat_stream_stub.so
 vendor/lib/sensor_calibrate.so
 vendor/lib/sensors.iio.so
+vendor/lib/sensors.rp.so
 vendor/lib/sensors.ssc.so
 vendor/lib/sensors.tof.so
-vendor/lib/sensors.rp.so
 vendor/lib64/libiio.so
 vendor/lib64/libsensor1.so
 vendor/lib64/libsensor_reg.so
 vendor/lib64/libsns_low_lat_stream_stub.so
 vendor/lib64/sensor_calibrate.so
 vendor/lib64/sensors.iio.so
+vendor/lib64/sensors.rp.so
 vendor/lib64/sensors.ssc.so
 vendor/lib64/sensors.tof.so
-vendor/lib64/sensors.rp.so
 
 # Thermal
 system/etc/thermal-engine-messi.conf:vendor/etc/thermal-engine.conf

@@ -49,8 +49,5 @@ ro.vendor.sensors.sta_detect=true
 ro.vendor.sensors.mot_detect=true
 ro.vendor.sensors.mot_ltv=true
 
-# SKU
-ro.boot.product.hardware.sku=qcril
-
 # SOC
 ro.soc.model=MSM8998

@@ -7,7 +7,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/motorola/messi/device.mk)
 
 # Device identifiers
-BUILD_FINGERPRINT := motorola/messi_verizon/messi:9/PDXS29.84-51-11-5/c69ad:user/release-keys
+BUILD_FINGERPRINT := motorola/messi_verizon/messi:9/PDXS29.84-51-11-8/95edf:user/release-keys
 PRODUCT_BRAND := motorola
 PRODUCT_DEVICE := messi
 PRODUCT_MANUFACTURER := motorola
@@ -16,4 +16,4 @@ PRODUCT_NAME := lineage_messi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=messi \
-    PRIVATE_BUILD_DESC="messi-user 9 PDXS29.84-51-11-5 c69ad release-keys"
+    PRIVATE_BUILD_DESC="messi-user 9 PDXS29.84-51-11-8 95edf release-keys"

@@ -8,6 +8,10 @@
 
 function blob_fixup() {
     case "${1}" in
+        # libbase_shim
+        vendor/bin/hw/motorola.hardware.health@1.0-service)
+            [ "$2" = "" ] && return 0
+            "${PATCHELF}" --add-needed "libbase_shim.so" "${2}"
         # Fix camera recording
         vendor/lib/libmmcamera2_pproc_modules.so)
             [ "$2" = "" ] && return 0

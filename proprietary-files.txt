@@ -1,10 +1,15 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
 ## are from messi (PDXS29.84-51-11-8).
 
+# Current blobs with ELF checks disabled:
+# android.hardware.keymaster@3.0-impl-qti.so, android.hardware.gatekeeper@1.0-impl-qti.so are unable to resolve the following symbol: _ZN14keymasterutils14KeymasterUtilsC1Ev
+# audio.primary.msm8998.so, libtinyalsa.so are parts of a prebuilt stack, with unresolvable dependencies on GNU makefile targets
+# libmmcamera2_cpp_module, libmmcamera2_iface_modules, libmmcamera2_imglib_modules, libmmcamera2_is, libmmcamera2_isp_modules, libmmcamera2_mct, libmmcamera2_q3a_core, libmmcamera2_sensor_modules, libmmcamera2_stats_algorithm, libmmcamera2_stats_lib, libmmcamera2_stats_modules, libmmcamera_faceproc, libmmcamera_hdr_gb_lib, libmmcamera_interface, libmmcamera_pdaf, libmmcamera_pdafcamif, libmmcamera_vstab_module are unable to resolve the following symbol: __aeabi_uldivmod (32-bit)
+
 # Audio (Prebuilt Audio HAL)
-vendor/lib/hw/audio.primary.msm8998.so
+vendor/lib/hw/audio.primary.msm8998.so:vendor/lib/hw/audio.primary.msm8998-moto.so;DISABLE_CHECKELF
 vendor/lib/libmotaudioutils.so
-vendor/lib/libtinyalsa.so
+vendor/lib/libtinyalsa.so:vendor/lib/libtinyalsa-moto.so;DISABLE_CHECKELF
 vendor/lib/libtinycompress.so
 vendor/lib/libtinycompress_vendor.so
 vendor/lib/libunshorten.so
@@ -25,12 +30,9 @@ vendor/lib/soundfx/libmmieffectswrapper.so
 vendor/lib/soundfx/libspeakerbundle.so
 
 # Camera
-system/app/MotoSignatureApp/MotoSignatureApp.apk;PRESIGNED
-system/etc/permissions/com.motorola.motosignature.xml
 system/etc/zaf/zaf_imx386.json:vendor/etc/zaf/zaf_imx386.json
 system/etc/zaf/zaf_imx386_mono.json:vendor/etc/zaf/zaf_imx386_mono.json
 system/etc/zaf/zaf_mot_s5k2l7sa.json:vendor/etc/zaf/zaf_mot_s5k2l7sa.json
-system/framework/com.motorola.motosignature.jar
 system/lib/lib_mot_app6_metadata.so:vendor/lib/lib_mot_app6_metadata.so
 system/lib/libmot_lux_standardization.so:vendor/lib/libmot_lux_standardization.so
 vendor/bin/vl53l1_daemon
@@ -42,7 +44,6 @@ vendor/lib/libactuator_mot_ak7371.so
 vendor/lib/libflash_aw3643_front.so
 vendor/lib/libflash_aw3643_rear.so
 vendor/lib/libflash_pmic.so
-vendor/lib/libgralloc1.so
 vendor/lib/libhal_dbg.so
 vendor/lib/libjpegdhw.so
 vendor/lib/libjpegdmahw.so
@@ -224,22 +225,23 @@ system/etc/firmware/cpp_firmware_v1_6_0.fw:vendor/firmware/cpp_firmware_v1_6_0.f
 system/etc/firmware/cpp_firmware_v1_8_0.fw:vendor/firmware/cpp_firmware_v1_8_0.fw
 
 # Camera - mmcamera
+vendor/lib/libdepthmapwrapper.so
 vendor/lib/libmmcamera2_c2d_module.so
-vendor/lib/libmmcamera2_cpp_module.so
+vendor/lib/libmmcamera2_cpp_module.so;DISABLE_CHECKELF
 vendor/lib/libmmcamera2_frame_algorithm.so
-vendor/lib/libmmcamera2_iface_modules.so
-vendor/lib/libmmcamera2_imglib_modules.so
-vendor/lib/libmmcamera2_is.so
-vendor/lib/libmmcamera2_isp_modules.so
-vendor/lib/libmmcamera2_mct.so
-vendor/lib/libmmcamera2_mct_shimlayer.so
+vendor/lib/libmmcamera2_iface_modules.so;DISABLE_CHECKELF
+vendor/lib/libmmcamera2_imglib_modules.so;DISABLE_CHECKELF
+vendor/lib/libmmcamera2_is.so;DISABLE_CHECKELF
+vendor/lib/libmmcamera2_isp_modules.so;DISABLE_CHECKELF
+vendor/lib/libmmcamera2_mct.so;DISABLE_CHECKELF
+vendor/lib/libmmcamera2_mct_shimlayer.so;DISABLE_CHECKELF
 vendor/lib/libmmcamera2_pp_buf_mgr.so
 vendor/lib/libmmcamera2_pproc_modules.so
-vendor/lib/libmmcamera2_q3a_core.so
+vendor/lib/libmmcamera2_q3a_core.so;DISABLE_CHECKELF
 vendor/lib/libmmcamera2_sensor_modules.so
-vendor/lib/libmmcamera2_stats_algorithm.so
-vendor/lib/libmmcamera2_stats_lib.so
-vendor/lib/libmmcamera2_stats_modules.so
+vendor/lib/libmmcamera2_stats_algorithm.so;DISABLE_CHECKELF
+vendor/lib/libmmcamera2_stats_lib.so;DISABLE_CHECKELF
+vendor/lib/libmmcamera2_stats_modules.so;DISABLE_CHECKELF
 vendor/lib/libmmcamera_bokeh.so
 vendor/lib/libmmcamera_dbg.so
 vendor/lib/libmmcamera_depth_map.so
@@ -247,7 +249,7 @@ vendor/lib/libmmcamera_eebinparse.so
 vendor/lib/libmmcamera_eeprom_util.so
 vendor/lib/libmmcamera_eztune_module.so
 vendor/lib/libmmcamera_facedetection_lib.so
-vendor/lib/libmmcamera_faceproc.so
+vendor/lib/libmmcamera_faceproc.so;DISABLE_CHECKELF
 vendor/lib/libmmcamera_faceproc2.so
 vendor/lib/libmmcamera_gt24c128b_mono_eeprom.so
 vendor/lib/libmmcamera_gt24c128b_rgb_eeprom.so
@@ -258,7 +260,7 @@ vendor/lib/libmmcamera_imglib.so
 vendor/lib/libmmcamera_imglib_faceproc_adspstub.so
 vendor/lib/libmmcamera_imx386.so
 vendor/lib/libmmcamera_imx386_mono.so
-vendor/lib/libmmcamera_interface.so
+vendor/lib/libmmcamera_interface.so;DISABLE_CHECKELF
 vendor/lib/libmmcamera_isp_abf48.so
 vendor/lib/libmmcamera_isp_aec_bg_stats47.so
 vendor/lib/libmmcamera_isp_bf_stats47.so
@@ -303,7 +305,6 @@ vendor/lib/libmmcamera_isp_scaler_viewfinder46.so
 vendor/lib/libmmcamera_isp_sce40.so
 vendor/lib/libmmcamera_isp_snr47.so
 vendor/lib/libmmcamera_isp_sub_module.so
-vendor/lib/libmmcamera_llvd.so
 vendor/lib/libmmcamera_mot_ov5695.so
 vendor/lib/libmmcamera_mot_ov5695_eeprom.so
 vendor/lib/libmmcamera_mot_s5k2l7sa.so
@@ -311,10 +312,9 @@ vendor/lib/libmmcamera_mot_s5k2l7sa_eeprom.so
 vendor/lib/libmmcamera_mot_s5k3p8sp.so
 vendor/lib/libmmcamera_mot_s5k3p8sp_eeprom.so
 vendor/lib/libmmcamera_mot_s5k4h7.so
-vendor/lib/libmmcamera_optizoom_lib.so
 vendor/lib/libmmcamera_paaf_lib.so
-vendor/lib/libmmcamera_pdaf.so
-vendor/lib/libmmcamera_pdafcamif.so
+vendor/lib/libmmcamera_pdaf.so;DISABLE_CHECKELF
+vendor/lib/libmmcamera_pdafcamif.so;DISABLE_CHECKELF
 vendor/lib/libmmcamera_ppbase_module.so
 vendor/lib/libmmcamera_ppeiscore.so
 vendor/lib/libmmcamera_quadracfa.so
@@ -322,14 +322,13 @@ vendor/lib/libmmcamera_s5k4h7a8s_eeprom.so
 vendor/lib/libmmcamera_s5k4h8.so
 vendor/lib/libmmcamera_s5k4h8_aux.so
 vendor/lib/libmmcamera_s5k4h8_eeprom.so
-vendor/lib/libmmcamera_stillmore_lib.so
 vendor/lib/libmmcamera_sw2d_lib.so
 vendor/lib/libmmcamera_thread_services.so
 vendor/lib/libmmcamera_tintless_algo.so
 vendor/lib/libmmcamera_tintless_bg_pca_algo.so
 vendor/lib/libmmcamera_tuning.so
 vendor/lib/libmmcamera_tuning_lookup.so
-vendor/lib/libmmcamera_vstab_module.so
+vendor/lib/libmmcamera_vstab_module.so;DISABLE_CHECKELF
 vendor/lib64/libmmcamera2_frame_algorithm.so
 vendor/lib64/libmmcamera2_is.so
 vendor/lib64/libmmcamera2_stats_algorithm.so
@@ -347,6 +346,22 @@ vendor/lib/libdualcameraddm.so
 vendor/lib/libmm-qcamera.so
 vendor/lib64/libdualcameraddm.so
 
+# Camera - SCVE
+vendor/lib/libadsp_hvx_callback_skel.so
+vendor/lib/libadsp_hvx_stub.so
+vendor/lib/libfastcvadsp_stub.so
+vendor/lib/libscveBlobDescriptor.so
+vendor/lib/libscveBlobDescriptor_stub.so
+vendor/lib/libscveCommon.so
+vendor/lib/libscveCommon_stub.so
+vendor/lib/libscveFaceRecognition.so
+vendor/lib/libscveObjectSegmentation.so
+vendor/lib/libscveObjectSegmentation_stub.so
+vendor/lib/libscveObjectTracker.so
+vendor/lib/libscveObjectTracker_stub.so
+vendor/lib/libscvePanorama.so
+vendor/lib/libscvePanorama_lite.so
+
 # DSP
 vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so
 vendor/lib/rfsa/adsp/libvpp_frc.so
@@ -356,33 +371,37 @@ vendor/lib/rfsa/adsp/libvpp_svc_skel.so
 vendor/bin/qseecomd
 vendor/lib/libQSEEComAPI.so
 vendor/lib/libcppf.so
+vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so
 vendor/lib64/libGPreqcancel.so
 vendor/lib64/libGPreqcancel_svc.so
 vendor/lib64/libQSEEComAPI.so
 vendor/lib64/libSecureUILib.so
+vendor/lib64/libStDrvInt.so
 vendor/lib64/libdrmfs.so
 vendor/lib64/libdrmtime.so
+vendor/lib64/libhdcpsrm.so
 vendor/lib64/libqisl.so
 vendor/lib64/librpmb.so
+vendor/lib64/libsecureui_svcsock.so
 vendor/lib64/libspl.so
 vendor/lib64/libssd.so
+vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
 
 # Fingerprint
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-fpcservice
 vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc
-vendor/lib64/com.fingerprints.extension@1.0.so
 
 # Gatekeeper
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
 vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
-vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so
+vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so;DISABLE_CHECKELF
 vendor/lib/hw/gatekeeper.msm8998.so
 vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 vendor/lib64/hw/gatekeeper.msm8998.so
 
 # Graphics - from lake_retail (QPWS30.61-21-18-7-12)
-vendor/lib/hw/vulkan.sdm660.so:vendor/lib/hw/vulkan.msm8998.so|4e63d9a526ab58ff94338d1b93bc03f56140b5d6
-vendor/lib64/hw/vulkan.sdm660.so:vendor/lib64/hw/vulkan.msm8998.so|30707b62f541e430a2ba7784b7909b57a75eced6
+vendor/lib/hw/vulkan.sdm660.so:vendor/lib/hw/vulkan.msm8998.so|6397d945fddd2b6da599a271086f9f8a66137a19
+vendor/lib64/hw/vulkan.sdm660.so:vendor/lib64/hw/vulkan.msm8998.so|ddc1c36de7afa01e793588e0e38bd8bb0fad75bb
 
 # IMS
 #product/priv-app/ims/ims.apk:system_ext/priv-app/ims/ims.apk|75854565f032706bd2c91bef682f1ab71a1db870
@@ -390,7 +409,7 @@ vendor/lib64/hw/vulkan.sdm660.so:vendor/lib64/hw/vulkan.msm8998.so|30707b62f541e
 # Keymaster
 vendor/bin/hw/android.hardware.keymaster@3.0-service-qti
 vendor/etc/init/android.hardware.keymaster@3.0-service-qti.rc
-vendor/lib/hw/android.hardware.keymaster@3.0-impl-qti.so
+vendor/lib/hw/android.hardware.keymaster@3.0-impl-qti.so;DISABLE_CHECKELF
 vendor/lib/libkeymasterdeviceutils.so
 vendor/lib/libkeymasterprovision.so
 vendor/lib/libkeymasterutils.so
@@ -411,7 +430,7 @@ vendor/etc/init/motorola.hardware.health@1.0-service.rc
 system/etc/firmware/upd-00000126-00001001-fed70128-fffe0001-02.tftf
 system/etc/permissions/com.motorola.aov.xml
 system/etc/permissions/com.motorola.mod.protocols.xml
-system/etc/permissions/com.motorola.mod.xml|15240c6ff5e2068f94f67c0287db8a07a40f5f87|b25e55275b7ecc5f4d46db52c6148fe7c75ff60b
+system/etc/permissions/com.motorola.mod.xml
 system/etc/permissions/com.motorola.mod_config.xml
 system/etc/permissions/com.motorola.mod_v2.xml
 system/etc/permissions/com.motorola.moto.permissions.xml
@@ -426,7 +445,6 @@ system/lib64/motorola.hardware.vibrator@1.0.so
 system/priv-app/ModFmwkProxyService/ModFmwkProxyService.apk|52c72bfeae28e2a0b1e96b4336bc6c01ee95bdea
 system/priv-app/ModService/ModService.apk|a5b97c14a102bcf06988e9044013829c89636161
 system/priv-app/ProjectorApp/ProjectorApp.apk
-vendor/bin/mods_camd
 vendor/lib/com.motorola.mod@1.0_vendor.so
 vendor/lib/libmodmanager.so
 vendor/lib64/com.motorola.mod@1.0_vendor.so
@@ -439,6 +457,9 @@ system/etc/permissions/com.motorola.motodisplay.xml:vendor/etc/permissions/com.m
 
 # NFC
 vendor/lib64/libpn553_fw.so:vendor/lib/libpn553_fw.so
+
+# Offmode charging
+vendor/bin/charge_only_mode
 
 # Postprocessing
 vendor/etc/qdcm_calib_data_mipi_mot_cmd_smd_1080p_601.xml|f4768cb34175de2de97ae03441ca8d4dbd33d906

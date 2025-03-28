@@ -2,7 +2,6 @@
 ## are from messi (PDXS29.84-51-11-8).
 
 # Current blobs with ELF checks disabled:
-# android.hardware.keymaster@3.0-impl-qti.so, android.hardware.gatekeeper@1.0-impl-qti.so are unable to resolve the following symbol: _ZN14keymasterutils14KeymasterUtilsC1Ev
 # audio.primary.msm8998.so, libtinyalsa.so are parts of a prebuilt stack, with unresolvable dependencies on GNU makefile targets
 # libmmcamera2_cpp_module, libmmcamera2_iface_modules, libmmcamera2_imglib_modules, libmmcamera2_is, libmmcamera2_isp_modules, libmmcamera2_mct, libmmcamera2_q3a_core, libmmcamera2_sensor_modules, libmmcamera2_stats_algorithm, libmmcamera2_stats_lib, libmmcamera2_stats_modules, libmmcamera_faceproc, libmmcamera_hdr_gb_lib, libmmcamera_interface, libmmcamera_pdaf, libmmcamera_pdafcamif, libmmcamera_vstab_module are unable to resolve the following symbol: __aeabi_uldivmod (32-bit)
 
@@ -394,8 +393,6 @@ vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc
 # Gatekeeper
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
 vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
-vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so;DISABLE_CHECKELF
-vendor/lib/hw/gatekeeper.msm8998.so
 vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 vendor/lib64/hw/gatekeeper.msm8998.so
 
@@ -409,10 +406,6 @@ vendor/lib64/hw/vulkan.sdm660.so:vendor/lib64/hw/vulkan.msm8998.so|ddc1c36de7afa
 # Keymaster
 vendor/bin/hw/android.hardware.keymaster@3.0-service-qti
 vendor/etc/init/android.hardware.keymaster@3.0-service-qti.rc
-vendor/lib/hw/android.hardware.keymaster@3.0-impl-qti.so;DISABLE_CHECKELF
-vendor/lib/libkeymasterdeviceutils.so
-vendor/lib/libkeymasterprovision.so
-vendor/lib/libkeymasterutils.so
 vendor/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so
 vendor/lib64/libkeymasterdeviceutils.so
 vendor/lib64/libkeymasterprovision.so
